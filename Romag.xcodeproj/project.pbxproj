@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A6E62362C6A392600AB15A3 /* RandomColorCVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E62352C6A392600AB15A3 /* RandomColorCVDataSource.swift */; };
+		2A6E623A2C6A50EA00AB15A3 /* TestViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E62392C6A50EA00AB15A3 /* TestViewViewController.swift */; };
+		2A6E623D2C6A512E00AB15A3 /* TestCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E623C2C6A512E00AB15A3 /* TestCollection.swift */; };
+		2A6E623F2C6A51F500AB15A3 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E623E2C6A51F500AB15A3 /* TestCell.swift */; };
+		2A6E62422C6A61FE00AB15A3 /* TestViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E62412C6A61FE00AB15A3 /* TestViewPresenter.swift */; };
+		2A6E62442C6A623300AB15A3 /* TestViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E62432C6A623300AB15A3 /* TestViewOutput.swift */; };
+		2A6E62462C6A625100AB15A3 /* TestViewViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E62452C6A625100AB15A3 /* TestViewViewControllerInput.swift */; };
+		2A6E62482C6A626300AB15A3 /* TestViewViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E62472C6A626300AB15A3 /* TestViewViewControllerOutput.swift */; };
+		2A6E624C2C6A645800AB15A3 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E624B2C6A645800AB15A3 /* Api.swift */; };
 		2A70CAD02C65102600B671F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A70CACF2C65102600B671F9 /* AppDelegate.swift */; };
 		2A70CAD22C65102600B671F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A70CAD12C65102600B671F9 /* SceneDelegate.swift */; };
 		2A70CAD42C65102600B671F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A70CAD32C65102600B671F9 /* ViewController.swift */; };
@@ -17,6 +26,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A6E62352C6A392600AB15A3 /* RandomColorCVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorCVDataSource.swift; sourceTree = "<group>"; };
+		2A6E62392C6A50EA00AB15A3 /* TestViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewViewController.swift; sourceTree = "<group>"; };
+		2A6E623C2C6A512E00AB15A3 /* TestCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollection.swift; sourceTree = "<group>"; };
+		2A6E623E2C6A51F500AB15A3 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
+		2A6E62412C6A61FE00AB15A3 /* TestViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewPresenter.swift; sourceTree = "<group>"; };
+		2A6E62432C6A623300AB15A3 /* TestViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewOutput.swift; sourceTree = "<group>"; };
+		2A6E62452C6A625100AB15A3 /* TestViewViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewViewControllerInput.swift; sourceTree = "<group>"; };
+		2A6E62472C6A626300AB15A3 /* TestViewViewControllerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewViewControllerOutput.swift; sourceTree = "<group>"; };
+		2A6E624B2C6A645800AB15A3 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		2A70CACC2C65102600B671F9 /* Romag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Romag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A70CACF2C65102600B671F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A70CAD12C65102600B671F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +68,61 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2A6E62372C6A50BE00AB15A3 /* TestController */ = {
+			isa = PBXGroup;
+			children = (
+				2A6E624A2C6A644000AB15A3 /* API */,
+				2A6E62492C6A63D500AB15A3 /* DI */,
+				2A6E623B2C6A50FB00AB15A3 /* Components */,
+				2A6E62402C6A61CE00AB15A3 /* Presenter */,
+				2A6E62382C6A50D800AB15A3 /* View */,
+			);
+			path = TestController;
+			sourceTree = "<group>";
+		};
+		2A6E62382C6A50D800AB15A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A6E62392C6A50EA00AB15A3 /* TestViewViewController.swift */,
+				2A6E62452C6A625100AB15A3 /* TestViewViewControllerInput.swift */,
+				2A6E62472C6A626300AB15A3 /* TestViewViewControllerOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A6E623B2C6A50FB00AB15A3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2A6E623C2C6A512E00AB15A3 /* TestCollection.swift */,
+				2A6E623E2C6A51F500AB15A3 /* TestCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2A6E62402C6A61CE00AB15A3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2A6E62412C6A61FE00AB15A3 /* TestViewPresenter.swift */,
+				2A6E62432C6A623300AB15A3 /* TestViewOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2A6E62492C6A63D500AB15A3 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		2A6E624A2C6A644000AB15A3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2A6E624B2C6A645800AB15A3 /* Api.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		2A70CAC32C65102600B671F9 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +144,7 @@
 		2A70CACE2C65102600B671F9 /* Romag */ = {
 			isa = PBXGroup;
 			children = (
+				2A6E62372C6A50BE00AB15A3 /* TestController */,
 				2A70CAE32C65118C00B671F9 /* SecondViewController.swift */,
 				2A70CACF2C65102600B671F9 /* AppDelegate.swift */,
 				2A70CAD12C65102600B671F9 /* SceneDelegate.swift */,
@@ -78,6 +152,7 @@
 				2A70CAD82C65102700B671F9 /* Assets.xcassets */,
 				2A70CADA2C65102700B671F9 /* LaunchScreen.storyboard */,
 				2A70CADD2C65102700B671F9 /* Info.plist */,
+				2A6E62352C6A392600AB15A3 /* RandomColorCVDataSource.swift */,
 			);
 			path = Romag;
 			sourceTree = "<group>";
@@ -205,8 +280,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A6E62422C6A61FE00AB15A3 /* TestViewPresenter.swift in Sources */,
 				2A70CAE42C65118C00B671F9 /* SecondViewController.swift in Sources */,
+				2A6E62462C6A625100AB15A3 /* TestViewViewControllerInput.swift in Sources */,
+				2A6E62362C6A392600AB15A3 /* RandomColorCVDataSource.swift in Sources */,
 				2A70CAD42C65102600B671F9 /* ViewController.swift in Sources */,
+				2A6E623D2C6A512E00AB15A3 /* TestCollection.swift in Sources */,
+				2A6E624C2C6A645800AB15A3 /* Api.swift in Sources */,
+				2A6E623F2C6A51F500AB15A3 /* TestCell.swift in Sources */,
+				2A6E62482C6A626300AB15A3 /* TestViewViewControllerOutput.swift in Sources */,
+				2A6E623A2C6A50EA00AB15A3 /* TestViewViewController.swift in Sources */,
+				2A6E62442C6A623300AB15A3 /* TestViewOutput.swift in Sources */,
 				2A70CAD02C65102600B671F9 /* AppDelegate.swift in Sources */,
 				2A70CAD22C65102600B671F9 /* SceneDelegate.swift in Sources */,
 			);
@@ -263,7 +347,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -326,7 +410,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
