@@ -8,33 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		2A6E62362C6A392600AB15A3 /* RandomColorCVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E62352C6A392600AB15A3 /* RandomColorCVDataSource.swift */; };
-		2A6E623A2C6A50EA00AB15A3 /* TestViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E62392C6A50EA00AB15A3 /* TestViewViewController.swift */; };
+		2A6E623A2C6A50EA00AB15A3 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E62392C6A50EA00AB15A3 /* TestViewController.swift */; };
 		2A6E623D2C6A512E00AB15A3 /* TestCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E623C2C6A512E00AB15A3 /* TestCollection.swift */; };
 		2A6E623F2C6A51F500AB15A3 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E623E2C6A51F500AB15A3 /* TestCell.swift */; };
 		2A6E62422C6A61FE00AB15A3 /* TestViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E62412C6A61FE00AB15A3 /* TestViewPresenter.swift */; };
 		2A6E62442C6A623300AB15A3 /* TestViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E62432C6A623300AB15A3 /* TestViewOutput.swift */; };
-		2A6E62462C6A625100AB15A3 /* TestViewViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E62452C6A625100AB15A3 /* TestViewViewControllerInput.swift */; };
-		2A6E62482C6A626300AB15A3 /* TestViewViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E62472C6A626300AB15A3 /* TestViewViewControllerOutput.swift */; };
+		2A6E62462C6A625100AB15A3 /* TestViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E62452C6A625100AB15A3 /* TestViewControllerInput.swift */; };
+		2A6E62482C6A626300AB15A3 /* TestViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E62472C6A626300AB15A3 /* TestViewControllerOutput.swift */; };
 		2A6E624C2C6A645800AB15A3 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E624B2C6A645800AB15A3 /* Api.swift */; };
+		2A6E624F2C6A7D3600AB15A3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6E624E2C6A7D3600AB15A3 /* Models.swift */; };
 		2A70CAD02C65102600B671F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A70CACF2C65102600B671F9 /* AppDelegate.swift */; };
 		2A70CAD22C65102600B671F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A70CAD12C65102600B671F9 /* SceneDelegate.swift */; };
 		2A70CAD42C65102600B671F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A70CAD32C65102600B671F9 /* ViewController.swift */; };
 		2A70CAD92C65102700B671F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A70CAD82C65102700B671F9 /* Assets.xcassets */; };
 		2A70CADC2C65102700B671F9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2A70CADB2C65102700B671F9 /* Base */; };
 		2A70CAE42C65118C00B671F9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A70CAE32C65118C00B671F9 /* SecondViewController.swift */; };
+		2AAACF812C6B82A500148B73 /* ApiInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAACF802C6B82A500148B73 /* ApiInput.swift */; };
 		AA9A56C161CABD651FF7073B /* Pods_Romag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D54FFCE8ED705354F099F6 /* Pods_Romag.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A6E62352C6A392600AB15A3 /* RandomColorCVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorCVDataSource.swift; sourceTree = "<group>"; };
-		2A6E62392C6A50EA00AB15A3 /* TestViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewViewController.swift; sourceTree = "<group>"; };
+		2A6E62392C6A50EA00AB15A3 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		2A6E623C2C6A512E00AB15A3 /* TestCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollection.swift; sourceTree = "<group>"; };
 		2A6E623E2C6A51F500AB15A3 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
 		2A6E62412C6A61FE00AB15A3 /* TestViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewPresenter.swift; sourceTree = "<group>"; };
 		2A6E62432C6A623300AB15A3 /* TestViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewOutput.swift; sourceTree = "<group>"; };
-		2A6E62452C6A625100AB15A3 /* TestViewViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewViewControllerInput.swift; sourceTree = "<group>"; };
-		2A6E62472C6A626300AB15A3 /* TestViewViewControllerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewViewControllerOutput.swift; sourceTree = "<group>"; };
+		2A6E62452C6A625100AB15A3 /* TestViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewControllerInput.swift; sourceTree = "<group>"; };
+		2A6E62472C6A626300AB15A3 /* TestViewControllerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewControllerOutput.swift; sourceTree = "<group>"; };
 		2A6E624B2C6A645800AB15A3 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		2A6E624E2C6A7D3600AB15A3 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		2A70CACC2C65102600B671F9 /* Romag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Romag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A70CACF2C65102600B671F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A70CAD12C65102600B671F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +46,7 @@
 		2A70CADB2C65102700B671F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A70CADD2C65102700B671F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A70CAE32C65118C00B671F9 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		2AAACF802C6B82A500148B73 /* ApiInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiInput.swift; sourceTree = "<group>"; };
 		7604ABF0D03FA96C7633ECAE /* Pods-Romag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Romag.debug.xcconfig"; path = "Target Support Files/Pods-Romag/Pods-Romag.debug.xcconfig"; sourceTree = "<group>"; };
 		D05D313730331BDE162A9766 /* Pods-Romag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Romag.release.xcconfig"; path = "Target Support Files/Pods-Romag/Pods-Romag.release.xcconfig"; sourceTree = "<group>"; };
 		E5D54FFCE8ED705354F099F6 /* Pods_Romag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Romag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,8 +75,8 @@
 		2A6E62372C6A50BE00AB15A3 /* TestController */ = {
 			isa = PBXGroup;
 			children = (
+				2A6E624D2C6A7D1D00AB15A3 /* Models */,
 				2A6E624A2C6A644000AB15A3 /* API */,
-				2A6E62492C6A63D500AB15A3 /* DI */,
 				2A6E623B2C6A50FB00AB15A3 /* Components */,
 				2A6E62402C6A61CE00AB15A3 /* Presenter */,
 				2A6E62382C6A50D800AB15A3 /* View */,
@@ -83,9 +87,9 @@
 		2A6E62382C6A50D800AB15A3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2A6E62392C6A50EA00AB15A3 /* TestViewViewController.swift */,
-				2A6E62452C6A625100AB15A3 /* TestViewViewControllerInput.swift */,
-				2A6E62472C6A626300AB15A3 /* TestViewViewControllerOutput.swift */,
+				2A6E62392C6A50EA00AB15A3 /* TestViewController.swift */,
+				2A6E62452C6A625100AB15A3 /* TestViewControllerInput.swift */,
+				2A6E62472C6A626300AB15A3 /* TestViewControllerOutput.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,19 +112,43 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		2A6E62492C6A63D500AB15A3 /* DI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DI;
-			sourceTree = "<group>";
-		};
 		2A6E624A2C6A644000AB15A3 /* API */ = {
 			isa = PBXGroup;
 			children = (
 				2A6E624B2C6A645800AB15A3 /* Api.swift */,
+				2AAACF802C6B82A500148B73 /* ApiInput.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		2A6E624D2C6A7D1D00AB15A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A6E624E2C6A7D3600AB15A3 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2A6E62502C6A7D5E00AB15A3 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				2A70CACF2C65102600B671F9 /* AppDelegate.swift */,
+				2A70CAD12C65102600B671F9 /* SceneDelegate.swift */,
+				2A70CAE32C65118C00B671F9 /* SecondViewController.swift */,
+				2A70CAD32C65102600B671F9 /* ViewController.swift */,
+				2A70CADA2C65102700B671F9 /* LaunchScreen.storyboard */,
+				2A70CADD2C65102700B671F9 /* Info.plist */,
+				2A6E62352C6A392600AB15A3 /* RandomColorCVDataSource.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		2A6E62512C6A7D7200AB15A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A70CAD82C65102700B671F9 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		2A70CAC32C65102600B671F9 = {
@@ -144,15 +172,9 @@
 		2A70CACE2C65102600B671F9 /* Romag */ = {
 			isa = PBXGroup;
 			children = (
+				2A6E62502C6A7D5E00AB15A3 /* Global */,
 				2A6E62372C6A50BE00AB15A3 /* TestController */,
-				2A70CAE32C65118C00B671F9 /* SecondViewController.swift */,
-				2A70CACF2C65102600B671F9 /* AppDelegate.swift */,
-				2A70CAD12C65102600B671F9 /* SceneDelegate.swift */,
-				2A70CAD32C65102600B671F9 /* ViewController.swift */,
-				2A70CAD82C65102700B671F9 /* Assets.xcassets */,
-				2A70CADA2C65102700B671F9 /* LaunchScreen.storyboard */,
-				2A70CADD2C65102700B671F9 /* Info.plist */,
-				2A6E62352C6A392600AB15A3 /* RandomColorCVDataSource.swift */,
+				2A6E62512C6A7D7200AB15A3 /* Resources */,
 			);
 			path = Romag;
 			sourceTree = "<group>";
@@ -282,14 +304,16 @@
 			files = (
 				2A6E62422C6A61FE00AB15A3 /* TestViewPresenter.swift in Sources */,
 				2A70CAE42C65118C00B671F9 /* SecondViewController.swift in Sources */,
-				2A6E62462C6A625100AB15A3 /* TestViewViewControllerInput.swift in Sources */,
+				2A6E62462C6A625100AB15A3 /* TestViewControllerInput.swift in Sources */,
+				2AAACF812C6B82A500148B73 /* ApiInput.swift in Sources */,
 				2A6E62362C6A392600AB15A3 /* RandomColorCVDataSource.swift in Sources */,
 				2A70CAD42C65102600B671F9 /* ViewController.swift in Sources */,
 				2A6E623D2C6A512E00AB15A3 /* TestCollection.swift in Sources */,
 				2A6E624C2C6A645800AB15A3 /* Api.swift in Sources */,
 				2A6E623F2C6A51F500AB15A3 /* TestCell.swift in Sources */,
-				2A6E62482C6A626300AB15A3 /* TestViewViewControllerOutput.swift in Sources */,
-				2A6E623A2C6A50EA00AB15A3 /* TestViewViewController.swift in Sources */,
+				2A6E624F2C6A7D3600AB15A3 /* Models.swift in Sources */,
+				2A6E62482C6A626300AB15A3 /* TestViewControllerOutput.swift in Sources */,
+				2A6E623A2C6A50EA00AB15A3 /* TestViewController.swift in Sources */,
 				2A6E62442C6A623300AB15A3 /* TestViewOutput.swift in Sources */,
 				2A70CAD02C65102600B671F9 /* AppDelegate.swift in Sources */,
 				2A70CAD22C65102600B671F9 /* SceneDelegate.swift in Sources */,
@@ -438,7 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Romag/Info.plist;
+				INFOPLIST_FILE = Romag/Global/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -465,7 +489,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Romag/Info.plist;
+				INFOPLIST_FILE = Romag/Global/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

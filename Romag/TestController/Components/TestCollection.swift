@@ -10,7 +10,7 @@ import UIKit
 class TestCollection: UICollectionView {
     var callback: ((Int) -> Void)?
     
-    let model: [Int] = [1, 2, 3, 4, 5]
+    var model: [ArticlesDecodableType] = []
     
     init() {
         let layout = UICollectionViewFlowLayout()
@@ -24,6 +24,12 @@ class TestCollection: UICollectionView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    func addElement(newsToken: ArticlesDecodableType) {
+        model.append(newsToken)
+    }
+    
+    // TODO configure function
 }
 
 extension TestCollection: UICollectionViewDataSource {
@@ -34,7 +40,7 @@ extension TestCollection: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let item = model[indexPath.item]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! TestCell
-        cell.configure(item)
+        cell.configure(item, index: indexPath.item)
         cell.delegate = self
         return cell
     }

@@ -8,5 +8,5 @@
 import Foundation
 
 protocol TestViewOutput: AnyObject {
-    
+    func viewDidLoad()
 }

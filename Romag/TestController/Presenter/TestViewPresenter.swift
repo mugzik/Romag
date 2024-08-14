@@ -8,11 +8,21 @@
 import Foundation
 
 final class TestViewPresenter: TestViewOutput {
+    weak var view: TestViewControllerInput!
+    weak var dataManager: DataInput!
     
 }
 
-extension TestViewPresenter: TestViewViewControllerOutput {
-    
+extension TestViewPresenter: TestViewControllerOutput {
+    func viewDidLoad() {
+        
+        dataManager.loadData( callback: { loadedData in
+            var data: [ArticlesDecodableType] = []
+            data.append(contentsOf: loadedData as! [ArticlesDecodableType])
+            self.view.setTestCollection(model: data)
+        } )
+        
+    }
 }
 
 private extension TestViewPresenter {

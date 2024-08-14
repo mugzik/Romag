@@ -1,5 +1,5 @@
 //
-//  TestViewViewController.swift
+//  TestViewController.swift
 //  Romag
 //
 //  Created by Maksim on 12.08.2024.
@@ -8,31 +8,37 @@
 import UIKit
 import SnapKit
 
-class TestViewViewController: UIViewController {
+class TestViewController: UIViewController {
     private var testCollection: TestCollection = .init()
     
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
+    var presenter: TestViewOutput!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
         layout()
         bindings()
-        getData()
+        presenter?.viewDidLoad()
     }
 }
 
-extension TestViewViewController: TestViewViewControllerInput {
-    
+extension TestViewController: TestViewControllerInput {
+    func setTestCollection(model: [ArticlesDecodableType]) {
+        debugPrint("setTestCollection called. Args: \(model)")
+        for el in model {
+            testCollection.addElement(newsToken: el)
+            debugPrint("Add element: \(el.title!)")
+        }
+        testCollection.reloadData()
+    }
 }
 
-private extension TestViewViewController {
+private extension TestViewController {
     func bindings() {
-        testCollection.callback = { [weak self] arg in
-            guard let self = self else { return }
-            print("tapped", arg)
+        testCollection.callback = { [weak self] in
+            guard self != nil else { return }
+            print("tapped", $0)
+            // TODO print from presenter
         }
     }
     
@@ -57,9 +63,5 @@ private extension TestViewViewController {
         
         testCollection = collection
         view.addSubview(testCollection)
-    }
-    
-    func getData() {
-        Api.shared.getSimpleData()
     }
 }

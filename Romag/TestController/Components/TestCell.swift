@@ -12,7 +12,9 @@ protocol TestCellDelegate: AnyObject {
 }
 
 class TestCell: UICollectionViewCell {
-    private var model: Int = Int()
+    // TODO add views
+    private var model: ArticlesDecodableType?
+    private var index: Int = Int()
     var delegate: TestCellDelegate?
     
     override init(frame: CGRect) {
@@ -24,15 +26,24 @@ class TestCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(_ item: Int) {
+    func configure(_ item: ArticlesDecodableType, index i: Int) {
         model = item
+        index = i
+        let label = UILabel()
+        label.text = item.title
+        
+        addSubview(label)
+        
+        label.snp.makeConstraints {
+            $0.size.equalToSuperview()
+        }
     }
 }
 
 private extension TestCell {
     @objc func onTapped()
     {
-        delegate?.tapped(index: model)
+        delegate?.tapped(index: index)
     }
     
     func setup() {
