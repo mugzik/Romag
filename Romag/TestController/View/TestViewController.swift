@@ -37,7 +37,11 @@ private extension TestViewController {
     func bindings() {
         testCollection.callback = { [weak self] in
             guard self != nil else { return }
-            print("tapped", $0)
+            if let model = $0 {
+                let descriptionView = FullNewsDescriptionView()
+                descriptionView.updateModel(model: model)
+                self?.navigationController?.pushViewController(descriptionView, animated: true)
+            }
             // TODO print from presenter
         }
     }

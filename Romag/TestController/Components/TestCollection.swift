@@ -8,7 +8,7 @@
 import UIKit
 
 class TestCollection: UICollectionView {
-    var callback: ((Int) -> Void)?
+    var callback: ((ArticlesDecodableType?) -> Void)?
     
     var model: [ArticlesDecodableType] = []
     
@@ -28,8 +28,6 @@ class TestCollection: UICollectionView {
     func addElement(newsToken: ArticlesDecodableType) {
         model.append(newsToken)
     }
-    
-    // TODO configure function
 }
 
 extension TestCollection: UICollectionViewDataSource {
@@ -49,13 +47,13 @@ extension TestCollection: UICollectionViewDataSource {
 extension TestCollection: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = UIScreen.main.bounds.width - 32
-        return CGSize(width: width, height: 54)
+        return CGSize(width: width, height: 86)
     }
 }
 
 extension TestCollection: TestCellDelegate {
     func tapped(index i: Int) {
-        callback?(i)
+        callback?(model[i])
     }
 }
 

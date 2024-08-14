@@ -24,6 +24,7 @@
 		2A70CADC2C65102700B671F9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2A70CADB2C65102700B671F9 /* Base */; };
 		2A70CAE42C65118C00B671F9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A70CAE32C65118C00B671F9 /* SecondViewController.swift */; };
 		2AAACF812C6B82A500148B73 /* ApiInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAACF802C6B82A500148B73 /* ApiInput.swift */; };
+		2AD75B252C6CCB52001F7B31 /* FullNewsDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD75B242C6CCB52001F7B31 /* FullNewsDescriptionView.swift */; };
 		AA9A56C161CABD651FF7073B /* Pods_Romag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D54FFCE8ED705354F099F6 /* Pods_Romag.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		2A70CADD2C65102700B671F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A70CAE32C65118C00B671F9 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		2AAACF802C6B82A500148B73 /* ApiInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiInput.swift; sourceTree = "<group>"; };
+		2AD75B242C6CCB52001F7B31 /* FullNewsDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullNewsDescriptionView.swift; sourceTree = "<group>"; };
 		7604ABF0D03FA96C7633ECAE /* Pods-Romag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Romag.debug.xcconfig"; path = "Target Support Files/Pods-Romag/Pods-Romag.debug.xcconfig"; sourceTree = "<group>"; };
 		D05D313730331BDE162A9766 /* Pods-Romag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Romag.release.xcconfig"; path = "Target Support Files/Pods-Romag/Pods-Romag.release.xcconfig"; sourceTree = "<group>"; };
 		E5D54FFCE8ED705354F099F6 /* Pods_Romag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Romag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +101,7 @@
 			children = (
 				2A6E623C2C6A512E00AB15A3 /* TestCollection.swift */,
 				2A6E623E2C6A51F500AB15A3 /* TestCell.swift */,
+				2AD75B242C6CCB52001F7B31 /* FullNewsDescriptionView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				2A70CAE42C65118C00B671F9 /* SecondViewController.swift in Sources */,
 				2A6E62462C6A625100AB15A3 /* TestViewControllerInput.swift in Sources */,
 				2AAACF812C6B82A500148B73 /* ApiInput.swift in Sources */,
+				2AD75B252C6CCB52001F7B31 /* FullNewsDescriptionView.swift in Sources */,
 				2A6E62362C6A392600AB15A3 /* RandomColorCVDataSource.swift in Sources */,
 				2A70CAD42C65102600B671F9 /* ViewController.swift in Sources */,
 				2A6E623D2C6A512E00AB15A3 /* TestCollection.swift in Sources */,
