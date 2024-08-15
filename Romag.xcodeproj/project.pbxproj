@@ -24,7 +24,12 @@
 		2A70CADC2C65102700B671F9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2A70CADB2C65102700B671F9 /* Base */; };
 		2A70CAE42C65118C00B671F9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A70CAE32C65118C00B671F9 /* SecondViewController.swift */; };
 		2AAACF812C6B82A500148B73 /* ApiInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAACF802C6B82A500148B73 /* ApiInput.swift */; };
-		2AD75B252C6CCB52001F7B31 /* FullNewsDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD75B242C6CCB52001F7B31 /* FullNewsDescriptionView.swift */; };
+		2AD75B252C6CCB52001F7B31 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD75B242C6CCB52001F7B31 /* NewsViewController.swift */; };
+		2AD75B2C2C6E20B2001F7B31 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD75B2B2C6E20B2001F7B31 /* ImageProvider.swift */; };
+		2AD75B2E2C6E211F001F7B31 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD75B2D2C6E211F001F7B31 /* DataProvider.swift */; };
+		2AD75B302C6E262A001F7B31 /* NewsViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD75B2F2C6E262A001F7B31 /* NewsViewPresenter.swift */; };
+		2AD75B322C6E2647001F7B31 /* NewsViewPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD75B312C6E2647001F7B31 /* NewsViewPresenterOutput.swift */; };
+		2AD75B342C6E3454001F7B31 /* NewsViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD75B332C6E3454001F7B31 /* NewsViewControllerInput.swift */; };
 		AA9A56C161CABD651FF7073B /* Pods_Romag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D54FFCE8ED705354F099F6 /* Pods_Romag.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +53,12 @@
 		2A70CADD2C65102700B671F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A70CAE32C65118C00B671F9 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		2AAACF802C6B82A500148B73 /* ApiInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiInput.swift; sourceTree = "<group>"; };
-		2AD75B242C6CCB52001F7B31 /* FullNewsDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullNewsDescriptionView.swift; sourceTree = "<group>"; };
+		2AD75B242C6CCB52001F7B31 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		2AD75B2B2C6E20B2001F7B31 /* ImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
+		2AD75B2D2C6E211F001F7B31 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		2AD75B2F2C6E262A001F7B31 /* NewsViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewPresenter.swift; sourceTree = "<group>"; };
+		2AD75B312C6E2647001F7B31 /* NewsViewPresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewPresenterOutput.swift; sourceTree = "<group>"; };
+		2AD75B332C6E3454001F7B31 /* NewsViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewControllerInput.swift; sourceTree = "<group>"; };
 		7604ABF0D03FA96C7633ECAE /* Pods-Romag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Romag.debug.xcconfig"; path = "Target Support Files/Pods-Romag/Pods-Romag.debug.xcconfig"; sourceTree = "<group>"; };
 		D05D313730331BDE162A9766 /* Pods-Romag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Romag.release.xcconfig"; path = "Target Support Files/Pods-Romag/Pods-Romag.release.xcconfig"; sourceTree = "<group>"; };
 		E5D54FFCE8ED705354F099F6 /* Pods_Romag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Romag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,7 +111,6 @@
 			children = (
 				2A6E623C2C6A512E00AB15A3 /* TestCollection.swift */,
 				2A6E623E2C6A51F500AB15A3 /* TestCell.swift */,
-				2AD75B242C6CCB52001F7B31 /* FullNewsDescriptionView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -175,11 +184,49 @@
 		2A70CACE2C65102600B671F9 /* Romag */ = {
 			isa = PBXGroup;
 			children = (
+				2AD75B262C6E1D89001F7B31 /* NewsViewController */,
 				2A6E62502C6A7D5E00AB15A3 /* Global */,
 				2A6E62372C6A50BE00AB15A3 /* TestController */,
 				2A6E62512C6A7D7200AB15A3 /* Resources */,
 			);
 			path = Romag;
+			sourceTree = "<group>";
+		};
+		2AD75B262C6E1D89001F7B31 /* NewsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2AD75B2A2C6E1E5C001F7B31 /* Api */,
+				2AD75B282C6E1E3F001F7B31 /* View */,
+				2AD75B272C6E1DA9001F7B31 /* Presenter */,
+			);
+			path = NewsViewController;
+			sourceTree = "<group>";
+		};
+		2AD75B272C6E1DA9001F7B31 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2AD75B2F2C6E262A001F7B31 /* NewsViewPresenter.swift */,
+				2AD75B312C6E2647001F7B31 /* NewsViewPresenterOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2AD75B282C6E1E3F001F7B31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2AD75B242C6CCB52001F7B31 /* NewsViewController.swift */,
+				2AD75B332C6E3454001F7B31 /* NewsViewControllerInput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2AD75B2A2C6E1E5C001F7B31 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				2AD75B2B2C6E20B2001F7B31 /* ImageProvider.swift */,
+				2AD75B2D2C6E211F001F7B31 /* DataProvider.swift */,
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 		E6139AB572512B851DC973B5 /* Pods */ = {
@@ -308,15 +355,20 @@
 				2A6E62422C6A61FE00AB15A3 /* TestViewPresenter.swift in Sources */,
 				2A70CAE42C65118C00B671F9 /* SecondViewController.swift in Sources */,
 				2A6E62462C6A625100AB15A3 /* TestViewControllerInput.swift in Sources */,
+				2AD75B342C6E3454001F7B31 /* NewsViewControllerInput.swift in Sources */,
 				2AAACF812C6B82A500148B73 /* ApiInput.swift in Sources */,
-				2AD75B252C6CCB52001F7B31 /* FullNewsDescriptionView.swift in Sources */,
+				2AD75B252C6CCB52001F7B31 /* NewsViewController.swift in Sources */,
 				2A6E62362C6A392600AB15A3 /* RandomColorCVDataSource.swift in Sources */,
+				2AD75B2E2C6E211F001F7B31 /* DataProvider.swift in Sources */,
+				2AD75B322C6E2647001F7B31 /* NewsViewPresenterOutput.swift in Sources */,
 				2A70CAD42C65102600B671F9 /* ViewController.swift in Sources */,
+				2AD75B2C2C6E20B2001F7B31 /* ImageProvider.swift in Sources */,
 				2A6E623D2C6A512E00AB15A3 /* TestCollection.swift in Sources */,
 				2A6E624C2C6A645800AB15A3 /* Api.swift in Sources */,
 				2A6E623F2C6A51F500AB15A3 /* TestCell.swift in Sources */,
 				2A6E624F2C6A7D3600AB15A3 /* Models.swift in Sources */,
 				2A6E62482C6A626300AB15A3 /* TestViewControllerOutput.swift in Sources */,
+				2AD75B302C6E262A001F7B31 /* NewsViewPresenter.swift in Sources */,
 				2A6E623A2C6A50EA00AB15A3 /* TestViewController.swift in Sources */,
 				2A6E62442C6A623300AB15A3 /* TestViewOutput.swift in Sources */,
 				2A70CAD02C65102600B671F9 /* AppDelegate.swift in Sources */,

@@ -38,11 +38,10 @@ private extension TestViewController {
         testCollection.callback = { [weak self] in
             guard self != nil else { return }
             if let model = $0 {
-                let descriptionView = FullNewsDescriptionView()
-                descriptionView.updateModel(model: model)
-                self?.navigationController?.pushViewController(descriptionView, animated: true)
+                let newsView = self!.getNewDescriptionView()
+                newsView.updateModel(model: model)
+                self!.navigationController?.pushViewController(newsView, animated: true)
             }
-            // TODO print from presenter
         }
     }
     
@@ -67,5 +66,18 @@ private extension TestViewController {
         
         testCollection = collection
         view.addSubview(testCollection)
+    }
+    
+    func getNewDescriptionView() -> NewsViewController
+    {
+        let newsView = NewsViewController()
+        let newsViewPresenter = NewsViewPresenter()
+        let imgProvider = ImageProvider()
+        
+        newsViewPresenter.view = newsView
+        newsViewPresenter.dataProvider = imgProvider
+        newsView.presenter = newsViewPresenter
+        
+        return newsView
     }
 }

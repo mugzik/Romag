@@ -14,7 +14,8 @@ import Alamofire
 class Api {
     static let API_KEY = "b9a169a3d8444f95b64438004e988df6"
     static let shared = Api()
-    static let news_url = "https://newsapi.org/v2/top-headlines?country=us"
+//    static let news_url = "https://newsapi.org/v2/top-headlines?country=us"
+    static let news_url = "https://newsapi.org/v2/everything?q=bitcoin"
         
     private init() {}
 }
