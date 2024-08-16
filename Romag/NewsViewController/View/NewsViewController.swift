@@ -14,6 +14,7 @@ class NewsViewController: UIViewController {
     
     let headTitle: UILabel = .init()
     let infoLabel: UILabel = .init()
+    let textView: UITextView = .init()
     let imageView: UIImageView = .init()
     
     override func viewDidLoad() {
@@ -26,17 +27,19 @@ class NewsViewController: UIViewController {
 
 extension NewsViewController {
     func setup() {
-        view.backgroundColor = .lightGray
+        view.backgroundColor = .white
         
         headTitle.numberOfLines = 0
         headTitle.backgroundColor = .white
         headTitle.layer.borderColor = UIColor.lightGray.cgColor
         view.addSubview(headTitle)
         
-        infoLabel.numberOfLines = 0
-        infoLabel.backgroundColor = .white
-        infoLabel.layer.borderColor = UIColor.lightGray.cgColor
-        view.addSubview(infoLabel)
+        textView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        textView.font = UIFont.systemFont(ofSize: 16)
+        textView.backgroundColor = .white
+        textView.isEditable = false
+        textView.isScrollEnabled = true
+        view.addSubview(textView)
         
         view.addSubview(imageView)
     }
@@ -57,12 +60,12 @@ extension NewsViewController {
             $0.height.equalTo(128)
         }
         
-        infoLabel.snp.makeConstraints {
+        textView.snp.makeConstraints {
             $0.top.equalTo(imageView.snp.bottom).offset(20)
             $0.centerX.equalToSuperview()
             $0.leading.equalToSuperview().offset(10)
             $0.trailing.equalToSuperview().offset(-10)
-            $0.bottom.lessThanOrEqualToSuperview()
+            $0.bottom.equalToSuperview().offset(-20)
         }
     }
     
@@ -70,7 +73,7 @@ extension NewsViewController {
         self.model = model
         headTitle.text = model.title
         
-        infoLabel.text = model.description
+        textView.text = model.content
         
         presenter.viewDidLoad()
     }
