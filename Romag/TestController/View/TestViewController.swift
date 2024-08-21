@@ -52,6 +52,9 @@ private extension TestViewController {
     }
     
     func setup() {
+        
+        self.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
+        
         setupView()
         setupTestCollection()
     }

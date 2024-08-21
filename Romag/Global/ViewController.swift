@@ -17,6 +17,7 @@ final class ViewController: UIViewController {
         view.backgroundColor = .gray
         //initialize()
         initAsCollectionView()
+        self.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
     }
 
     
