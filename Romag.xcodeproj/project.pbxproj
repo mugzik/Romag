@@ -26,7 +26,16 @@
 		2A787F932C76233C005528DB /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A787F922C76233C005528DB /* ToDoListViewController.swift */; };
 		2A787F992C762493005528DB /* ToDoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A787F982C762493005528DB /* ToDoListPresenter.swift */; };
 		2A787F9B2C762723005528DB /* ToDoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A787F9A2C762723005528DB /* ToDoListCell.swift */; };
+		2A787F9D2C7627C5005528DB /* ToDoListPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A787F9C2C7627C5005528DB /* ToDoListPresenterInput.swift */; };
+		2A787F9F2C7627DF005528DB /* ToDoListPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A787F9E2C7627DF005528DB /* ToDoListPresenterOutput.swift */; };
+		2A787FA12C762822005528DB /* ToDoListCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A787FA02C762822005528DB /* ToDoListCollection.swift */; };
+		2A787FA32C7629A0005528DB /* ToDoListViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A787FA22C7629A0005528DB /* ToDoListViewControllerInput.swift */; };
+		2A787FA52C7629C0005528DB /* ToDoListViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A787FA42C7629C0005528DB /* ToDoListViewControllerOutput.swift */; };
+		2A787FA82C7770F4005528DB /* RomagModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A787FA62C7770F3005528DB /* RomagModel.xcdatamodeld */; };
+		2A787FAE2C77872B005528DB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A787FAD2C77872B005528DB /* CoreDataManager.swift */; };
+		2A787FB02C7787BD005528DB /* ToDoDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A787FAF2C7787BD005528DB /* ToDoDataManager.swift */; };
 		2AAACF812C6B82A500148B73 /* ApiInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAACF802C6B82A500148B73 /* ApiInput.swift */; };
+		2AB2035C2C7E266C000AFD5C /* CreateTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB2035B2C7E266C000AFD5C /* CreateTodoView.swift */; };
 		2AD75B252C6CCB52001F7B31 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD75B242C6CCB52001F7B31 /* NewsViewController.swift */; };
 		2AD75B2C2C6E20B2001F7B31 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD75B2B2C6E20B2001F7B31 /* ImageProvider.swift */; };
 		2AD75B2E2C6E211F001F7B31 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD75B2D2C6E211F001F7B31 /* DataProvider.swift */; };
@@ -59,7 +68,17 @@
 		2A787F922C76233C005528DB /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
 		2A787F982C762493005528DB /* ToDoListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListPresenter.swift; sourceTree = "<group>"; };
 		2A787F9A2C762723005528DB /* ToDoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListCell.swift; sourceTree = "<group>"; };
+		2A787F9C2C7627C5005528DB /* ToDoListPresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListPresenterInput.swift; sourceTree = "<group>"; };
+		2A787F9E2C7627DF005528DB /* ToDoListPresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListPresenterOutput.swift; sourceTree = "<group>"; };
+		2A787FA02C762822005528DB /* ToDoListCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListCollection.swift; sourceTree = "<group>"; };
+		2A787FA22C7629A0005528DB /* ToDoListViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewControllerInput.swift; sourceTree = "<group>"; };
+		2A787FA42C7629C0005528DB /* ToDoListViewControllerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewControllerOutput.swift; sourceTree = "<group>"; };
+		2A787FA72C7770F4005528DB /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		2A787FAB2C7780F6005528DB /* Romag.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Romag.entitlements; sourceTree = "<group>"; };
+		2A787FAD2C77872B005528DB /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		2A787FAF2C7787BD005528DB /* ToDoDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDataManager.swift; sourceTree = "<group>"; };
 		2AAACF802C6B82A500148B73 /* ApiInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiInput.swift; sourceTree = "<group>"; };
+		2AB2035B2C7E266C000AFD5C /* CreateTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTodoView.swift; sourceTree = "<group>"; };
 		2AD75B242C6CCB52001F7B31 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		2AD75B2B2C6E20B2001F7B31 /* ImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
 		2AD75B2D2C6E211F001F7B31 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
@@ -152,6 +171,7 @@
 		2A6E62502C6A7D5E00AB15A3 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				2A787FA62C7770F3005528DB /* RomagModel.xcdatamodeld */,
 				2A70CACF2C65102600B671F9 /* AppDelegate.swift */,
 				2A70CAD12C65102600B671F9 /* SceneDelegate.swift */,
 				2A70CAE32C65118C00B671F9 /* SecondViewController.swift */,
@@ -193,6 +213,7 @@
 		2A70CACE2C65102600B671F9 /* Romag */ = {
 			isa = PBXGroup;
 			children = (
+				2A787FAB2C7780F6005528DB /* Romag.entitlements */,
 				2A787F912C7622EE005528DB /* ToDoListViewController */,
 				2AD75B262C6E1D89001F7B31 /* NewsViewController */,
 				2A6E62502C6A7D5E00AB15A3 /* Global */,
@@ -217,6 +238,8 @@
 			isa = PBXGroup;
 			children = (
 				2A787F922C76233C005528DB /* ToDoListViewController.swift */,
+				2A787FA22C7629A0005528DB /* ToDoListViewControllerInput.swift */,
+				2A787FA42C7629C0005528DB /* ToDoListViewControllerOutput.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,6 +248,8 @@
 			isa = PBXGroup;
 			children = (
 				2A787F982C762493005528DB /* ToDoListPresenter.swift */,
+				2A787F9C2C7627C5005528DB /* ToDoListPresenterInput.swift */,
+				2A787F9E2C7627DF005528DB /* ToDoListPresenterOutput.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -232,6 +257,8 @@
 		2A787F962C76238B005528DB /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				2A787FAD2C77872B005528DB /* CoreDataManager.swift */,
+				2A787FAF2C7787BD005528DB /* ToDoDataManager.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -240,6 +267,8 @@
 			isa = PBXGroup;
 			children = (
 				2A787F9A2C762723005528DB /* ToDoListCell.swift */,
+				2A787FA02C762822005528DB /* ToDoListCollection.swift */,
+				2AB2035B2C7E266C000AFD5C /* CreateTodoView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -409,26 +438,35 @@
 				2A6E62462C6A625100AB15A3 /* TestViewControllerInput.swift in Sources */,
 				2A787F932C76233C005528DB /* ToDoListViewController.swift in Sources */,
 				2AD75B342C6E3454001F7B31 /* NewsViewControllerInput.swift in Sources */,
+				2A787FA12C762822005528DB /* ToDoListCollection.swift in Sources */,
 				2AAACF812C6B82A500148B73 /* ApiInput.swift in Sources */,
 				2ADE77992C6F843400F2FF76 /* MainTabView.swift in Sources */,
+				2AB2035C2C7E266C000AFD5C /* CreateTodoView.swift in Sources */,
+				2A787F9D2C7627C5005528DB /* ToDoListPresenterInput.swift in Sources */,
 				2AD75B252C6CCB52001F7B31 /* NewsViewController.swift in Sources */,
 				2A6E62362C6A392600AB15A3 /* RandomColorCVDataSource.swift in Sources */,
 				2AD75B2E2C6E211F001F7B31 /* DataProvider.swift in Sources */,
 				2AD75B322C6E2647001F7B31 /* NewsViewPresenterOutput.swift in Sources */,
 				2A70CAD42C65102600B671F9 /* ViewController.swift in Sources */,
+				2A787FAE2C77872B005528DB /* CoreDataManager.swift in Sources */,
 				2A787F992C762493005528DB /* ToDoListPresenter.swift in Sources */,
 				2AD75B2C2C6E20B2001F7B31 /* ImageProvider.swift in Sources */,
 				2A6E623D2C6A512E00AB15A3 /* TestCollection.swift in Sources */,
 				2A6E624C2C6A645800AB15A3 /* Api.swift in Sources */,
 				2A6E623F2C6A51F500AB15A3 /* TestCell.swift in Sources */,
+				2A787FB02C7787BD005528DB /* ToDoDataManager.swift in Sources */,
 				2A6E624F2C6A7D3600AB15A3 /* Models.swift in Sources */,
+				2A787FA82C7770F4005528DB /* RomagModel.xcdatamodeld in Sources */,
 				2A787F9B2C762723005528DB /* ToDoListCell.swift in Sources */,
 				2A6E62482C6A626300AB15A3 /* TestViewControllerOutput.swift in Sources */,
 				2AD75B302C6E262A001F7B31 /* NewsViewPresenter.swift in Sources */,
+				2A787FA32C7629A0005528DB /* ToDoListViewControllerInput.swift in Sources */,
 				2A6E623A2C6A50EA00AB15A3 /* TestViewController.swift in Sources */,
 				2A6E62442C6A623300AB15A3 /* TestViewOutput.swift in Sources */,
 				2A70CAD02C65102600B671F9 /* AppDelegate.swift in Sources */,
+				2A787F9F2C7627DF005528DB /* ToDoListPresenterOutput.swift in Sources */,
 				2A70CAD22C65102600B671F9 /* SceneDelegate.swift in Sources */,
+				2A787FA52C7629C0005528DB /* ToDoListViewControllerOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,8 +609,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Romag/Romag.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Romag/Global/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -586,6 +626,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = G.Romag;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -598,8 +639,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Romag/Romag.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Romag/Global/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -613,6 +656,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = G.Romag;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -641,6 +685,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2A787FA62C7770F3005528DB /* RomagModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2A787FA72C7770F4005528DB /* Model.xcdatamodel */,
+			);
+			currentVersion = 2A787FA72C7770F4005528DB /* Model.xcdatamodel */;
+			path = RomagModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2A70CAC42C65102600B671F9 /* Project object */;
 }

@@ -27,13 +27,26 @@ private extension MainTabBarView {
         presenter.view = highlitedNews
         presenter.dataManager = dataManager
         
-        let tab2 = ViewController()
-        tab2.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+        let toDoList = getToDoViewController()
+        toDoList.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
         let tab3 = ViewController()
         tab3.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 2)
         let tab4 = ViewController()
         tab4.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 3)
         
-        setViewControllers([highlitedNewsNavController, tab2, tab3, tab4], animated: true)
+        setViewControllers([highlitedNewsNavController, toDoList, tab3, tab4], animated: true)
     }
+    
+    func getToDoViewController() -> ToDoListViewController {
+        let toDoListViewController = ToDoListViewController()
+        let presenter = ToDoListPresenter()
+        let dataManager = CoreDataManager.shared
+        
+        toDoListViewController.presenter = presenter
+        presenter.view = toDoListViewController
+        presenter.dataManager = dataManager
+        
+        return toDoListViewController
+    }
+    
 }
