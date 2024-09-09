@@ -56,7 +56,7 @@ extension ToDoListCollection: UICollectionViewDataSource {
 
 extension ToDoListCollection: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = UIScreen.main.bounds.width - 32
+        let width = self.bounds.width - 10
         return CGSize(width: width, height: 64)
     }
 }

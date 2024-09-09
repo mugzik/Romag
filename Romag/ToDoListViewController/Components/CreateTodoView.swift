@@ -13,7 +13,7 @@ protocol CreateTodoDelegate {
 
 class CreateTodoView: UIView {
     let newText: UITextView = UITextView()
-    let saveButton: UIButton = UIButton()
+    let saveButton: UIButton = UIButton(type: .system)
     var delegate: CreateTodoDelegate?
     
     override init(frame: CGRect) {
@@ -30,17 +30,23 @@ class CreateTodoView: UIView {
 
 private extension CreateTodoView {
     
-    func setup() {
+    func setup() {        
         newText.isEditable = true
         newText.textAlignment = .left
         newText.backgroundColor = .white
         newText.translatesAutoresizingMaskIntoConstraints = false
+        newText.clipsToBounds = false
         addSubview(newText)
         
         saveButton.addTarget(self, action: #selector(onCreateButtonPressed), for: .touchDown)
         saveButton.isEnabled = true
         saveButton.backgroundColor = .lightGray
+        saveButton.clipsToBounds = false
+        saveButton.setImage(UIImage(systemName:"plus"), for: .normal)
         addSubview(saveButton)
+        
+        layer.masksToBounds = true
+        layer.cornerRadius = 5
     }
     
     func layout() {

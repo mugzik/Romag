@@ -23,12 +23,15 @@ class ToDoListViewController: UIViewController {
 
 private extension ToDoListViewController {
     func setup() {
+        view.backgroundColor = .darkGray
+        
         toDoListCollection.rmDelegate = self
-        toDoListCollection.backgroundColor = .cyan
+        toDoListCollection.backgroundColor = .lightGray
+        toDoListCollection.layer.cornerRadius = 5
         view.addSubview(toDoListCollection)
         
         newToDoView.delegate = self
-        newToDoView.backgroundColor = .blue
+        newToDoView.backgroundColor = .lightGray
         view.addSubview(newToDoView)
     }
     
@@ -36,15 +39,15 @@ private extension ToDoListViewController {
         newToDoView.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide)
             $0.leading.equalToSuperview().offset(10)
-            $0.trailing.equalToSuperview().offset(10)
+            $0.trailing.equalToSuperview().offset(-10)
             $0.height.equalTo(64)
         }
         
         toDoListCollection.snp.makeConstraints {
             $0.top.equalTo(newToDoView.snp.bottom).offset(10)
             $0.leading.equalToSuperview().offset(10)
-            $0.trailing.equalToSuperview().offset(10)
-            $0.bottom.equalToSuperview().offset(10)
+            $0.trailing.equalToSuperview().offset(-10)
+            $0.bottom.greaterThanOrEqualToSuperview()
         }
     }
     

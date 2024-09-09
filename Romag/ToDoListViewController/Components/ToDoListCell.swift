@@ -12,9 +12,9 @@ protocol ToDoRemoveDelegate {
 }
 
 class ToDoListCell: UICollectionViewCell {
-    let label: UILabel = .init()
-    let checkButton: UIButton = .init()
-    let removeButton: UIButton = .init()
+    let label: UITextView = .init()
+    let checkButton: UIButton = UIButton(type: .system)
+    let removeButton: UIButton = UIButton(type: .system)
     var id: Int = Int()
     
     var delegate: ToDoRemoveDelegate?
@@ -42,14 +42,33 @@ class ToDoListCell: UICollectionViewCell {
 private extension ToDoListCell {
     func setup() {
         label.backgroundColor = .white
-        addSubview(label)
+        label.textContainerInset = UIEdgeInsets(top:0, left: 5, bottom: 0, right: 0)
+        
+        let font = UIFont(name: "TimesNewRomanPSMT", size: 16)
+        label.font = font
+        
+        contentView.addSubview(label)
         
         checkButton.backgroundColor = .blue
-        addSubview(checkButton)
+        checkButton.setImage(UIImage(systemName: "checkmark"), for: .normal)
+        contentView.addSubview(checkButton)
         
         removeButton.backgroundColor = .red
         removeButton.addTarget(self, action: #selector(onRemoveButtonClicked), for: .touchDown)
-        addSubview(removeButton)
+        removeButton.setImage(UIImage(systemName: "trash"), for: .normal)
+        contentView.addSubview(removeButton)
+        
+        contentView.layer.cornerRadius = 5
+        contentView.layer.masksToBounds = true
+        
+        contentView.layer.borderColor = UIColor.darkGray.cgColor
+        contentView.layer.borderWidth = 1
+        
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = CGSize(width: 0, height: 2)
+        layer.shadowRadius = 4
+        layer.shadowOpacity = 0.4
+        layer.masksToBounds = false
     }
     
     func layout() {
@@ -60,6 +79,7 @@ private extension ToDoListCell {
         
         removeButton.snp.makeConstraints {
             $0.bottom.equalToSuperview()
+            $0.leading.equalTo(label.snp.trailing)
             $0.trailing.equalToSuperview()
         }
         
@@ -67,9 +87,10 @@ private extension ToDoListCell {
             $0.leading.equalToSuperview()
             $0.top.equalToSuperview()
             $0.bottom.equalToSuperview()
+            $0.trailing.equalTo(checkButton.snp.leading)
         }
     }
-    
+    	
     @objc func onRemoveButtonClicked() {
         debugPrint("Remove button clicked")
         guard let delegate = delegate else { return }
